@@ -24,8 +24,12 @@
 #include <map>
 #include <vector>
 
-struct _Mix_Music;
-typedef struct _Mix_Music Mix_Music;
+//struct _Mix_Music;
+//typedef struct _Mix_Music Mix_Music;
+// Above declaration of _Mix_Music is wrong using sdl-ttf 2.24, the underscore was removed, commented above two lines and added one below
+using Mix_Music = struct Mix_Music;
+
+
 
 //Class for loading and playing the music.
 class MusicManager{
