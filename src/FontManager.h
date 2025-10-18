@@ -22,12 +22,8 @@
 
 // The forward declaration of TTF_Font is clunky like this
 // as it's forward declared like this in SDL_ttf_fontfallback.h
-//struct _TTF_Font;
-//typedef struct _TTF_Font TTF_Font;
-
-// Above declaration of _TTF_FONT is wrong using sdl-ttf 2.24, the underscore was removed, commented above two lines and added one below
-using TTF_Font = struct TTF_Font;
-
+struct _TTF_Font;
+typedef struct _TTF_Font TTF_Font;
 
 #include <string>
 #include <vector>
